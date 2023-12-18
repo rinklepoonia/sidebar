@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text {
+    color: #606060;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 13px 35px;
+    border: 2px solid #128DFF;
+    background: white;
+    color: var(--Blue, #128DFF);
+    color: var(--Blue, #128DFF);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    width: 230px;
+}
+
+.btn:hover {
+    background: var(--Gradient, linear-gradient(97deg, #128DFF -4.95%, #1444EF 109.04%));
+    color: white;
+}
+
+.text1 {
+    color: #000;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 86px 0 25px 32px;
+}
+
+.btn1 {
+    text-align: center;
+    font-family: ' Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--Blue, #128DFF);
+    border-radius: 4px;
+    padding: 13px 35px;
+    border: 1px solid #128DFF;
+    background: white;
+    cursor: pointer;
+    width: 230px;
+    margin-bottom: 5px;
+}
+
+.btn1:hover {
+    background: var(--Gradient, linear-gradient(97deg, #128DFF -4.95%, #1444EF 109.04%));
+    color: var(--White, #FFF);
+}
+
+.sidebar {
+    border-radius: 0px 16px 16px 0px;
+    background: var(--White, #FFF);
+    box-shadow: 9px 4px 26px 0px rgba(0, 0, 0, 0.06);
+    width: 286px;
+    height: 100%;
+    position: absolute;
+    transition: all 300ms linear;
+    z-index: 10;
+}
+
+.position-absolute1 {
+    position: absolute;
+    top: 27px;
+    right: 17px;
+}
+
+.sidebar {
+    left: -100%;
+}
+
+.sidebar.show {
+    left: 0;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+    background: var(--Black, #000);
+    z-index: 2;
+    display: none;
+}
